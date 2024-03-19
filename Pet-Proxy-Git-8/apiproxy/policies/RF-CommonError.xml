@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-CommonError">
+  <FaultResponse>
+    <Set>
+      <Payload contentType="application/json">
+    {
+      "errorCode": "{flow.error.code}",
+      "errorType": "{flow.error.type}",
+      "errorMessage": "{flow.error.message}"
+    }
+  </Payload>
+      <StatusCode>{flow.error.status}</StatusCode>
+      <ReasonPhrase>{flow.error.reason}</ReasonPhrase>
+    </Set>
+  </FaultResponse>
+</RaiseFault>
