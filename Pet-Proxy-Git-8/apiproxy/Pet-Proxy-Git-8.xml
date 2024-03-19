@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revison="1" name="Pet-Proxy-Git-8">
+  <Description>MAVEN CONFIG PLUGIN - Test API Proxy</Description>
+  <CreatedAt>1710849283</CreatedAt>
+  <LastModifiedAt>1710849283</LastModifiedAt>
+  <BasePaths>/pet-git-8/v1</BasePaths>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>
