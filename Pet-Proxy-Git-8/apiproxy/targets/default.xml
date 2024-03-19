@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<TargetEndpoint name="default">
+  <Description>MAVEN CONFIG PLUGIN - Test API Proxy</Description>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>CORS</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <LoadBalancer>
+      <Server name="TS-Pet-Proxy-Git-8"/>
+    </LoadBalancer>
+    <Path>/photos</Path>
+  </HTTPTargetConnection>
+</TargetEndpoint>
