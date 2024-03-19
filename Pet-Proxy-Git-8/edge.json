@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "envConfig": {
+    "dev1": {
+      "targetServers": [
+        {
+          "name": "TS-Pet-Proxy-Git-8",
+          "host": "google.com",
+          "isEnabled": true,
+          "port": 443
+        }
+      ]
+    }
+  }
+}
