@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging continueOnError="true" enabled="true" name="ML-CloudLogging">
+  <DisplayName>ML-Cloud Logging</DisplayName>
+  <CloudLogging>
+    <LogName>projects/{organization.name}/logs/apigee</LogName>
+    <Message>{organization.name}.{apiproxy.name}.{environment.name} | {error.status.code}{error.content}</Message>
+    <Labels>
+      <Label>
+        <Key>apiProxy</Key>
+        <Value>Pet-Proxy-Git-8</Value>
+      </Label>
+    </Labels>
+    <ResourceType>apigee.googleapis.com/Environment</ResourceType>
+  </CloudLogging>
+</MessageLogging>
